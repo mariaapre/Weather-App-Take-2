@@ -1,0 +1,38 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+}
+.weather-app-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.weather-app {
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  border: 2px solid #fddb92;
+  font-family: "Arima Madurai", cursive;
+  font-weight: 400;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+}

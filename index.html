@@ -10,43 +10,59 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Houston</h1>
-        <ul>
-          <li>Tuesday 11:52</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <ul>
-              <li>
-                Precipitation: 0%
-              </li>
-              <li>
-                Humidity: 73%
-              </li>
-              <li>
-                Wind: 2km/h1
-              </li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <img src="" alt="Clear" />
-            12°C | °F
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <ul>
+            <li>Tuesday 11:52</li>
+            <li>Clear</li>
+          </ul>
+          <h1>Houston</h1>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li>
+                  Precipitation: 0%
+                </li>
+                <li>
+                  Humidity: 73%
+                </li>
+                <li>
+                  Wind: 2km/h1
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <img src="" alt="Clear" />
+              <strong>12</strong>
+              <span class="units">°C | <a href="#">°F</a></span>
+              <ul>
+                <li>
+                  Sunrise: hour
+                </li>
+                <li>
+                  Sunset: hour
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/mariaapre/Weather-App-Take-2"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Maria Apreza
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/mariaapre/Weather-App-Take-2"
-          target="_blank"
-          >Open-source code</a
-        >by Maria Apreza
-      </small>
     </div>
   </body>
 </html>

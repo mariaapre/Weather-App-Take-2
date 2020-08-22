@@ -37,3 +37,22 @@ strong {
   border-radius: 10px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+.weather-forecast {
+  margin-top: 10px;
+}
+.weather-forecast h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  padding-top: 7px;
+}
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}

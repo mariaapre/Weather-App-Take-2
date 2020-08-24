@@ -64,18 +64,19 @@ function displayForecast(response) {
 
   forecastElement.innerHTML = ` 
     <div class="col-2">
-        <h3>
-          ${formatHours(forecast.dt * 1000)}
-        </h3>
-        <img src="http://openweathermap.org/img/wn/${
+      <h3>
+         ${formatHours(forecast.dt * 1000)}
+      </h3>
+      <img 
+        src="http://openweathermap.org/img/wn/${
           forecast.data.weather[0].icon
         }@2x.png"/>
         <div class="weather-forecast-temperature">
                 <strong>${Math.round(
                   forecast.main.temp_max
-                )}°</strong>/${Math.round(forecast.main.temo_min)}°
+                )}°</strong> / ${Math.round(forecast.main.temp_min)}°
         </div>
-        </div>`;
+    </div>`;
 }
 
 function search(city) {

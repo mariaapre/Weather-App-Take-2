@@ -56,3 +56,11 @@ strong {
   line-height: 15px;
   white-space: nowrap;
 }
+
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+}

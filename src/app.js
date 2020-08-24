@@ -65,7 +65,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = ` 
     <div class="col-2">
         <h3>
-          ${forecast.dt}
+          ${formatHours(forecast.dt * 1000)}
         </h3>
         <img src="http://openweathermap.org/img/wn/${
           forecast.data.weather[0].icon
@@ -83,7 +83,7 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 
-  apiUrl = `https://samples.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 

@@ -69,7 +69,7 @@ function displayForecast(response) {
       </h3>
       <img 
         src="http://openweathermap.org/img/wn/${
-          forecast.data.weather[0].icon
+          forecast.weather[0].icon
         }@2x.png"/>
         <div class="weather-forecast-temperature">
                 <strong>${Math.round(

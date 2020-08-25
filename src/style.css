@@ -9,12 +9,31 @@ li {
   padding: 0;
 }
 
-.main strong {
+strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
 }
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #fddb92;
+  border-color: #fddb92;
+}
+.btn.btn-primary:hover {
+  color: #fff;
+  background-color: #ec6e4b;
+  border-color: #ec6e4b;
+}
+
+.col-2 {
+  text-align: center;
+}
+.col-2 img {
+  width: 100%;
+}
+
 .units {
   position: relative;
   font-size: 16px;

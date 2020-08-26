@@ -16,6 +16,10 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bc81e69b86.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -24,7 +28,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Enter city"
@@ -40,6 +44,15 @@
                   class="btn btn-primary w-100"
                 />
               </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light location-button w-50"
+                  id="current-location"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+              </div>
             </div>
           </form>
           <ul>
@@ -49,9 +62,7 @@
           <div class="row">
             <div class="col-6">
               <ul>
-                <li>
-                  Precipitation: 0%
-                </li>
+                <li>Precipitation: <span id="rain"></span>%</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
@@ -74,6 +85,7 @@
               </ul>
             </div>
           </div>
+          <h4>Today's forecast:</h4>
           <div class="row weather-forecast" id="forecast"></div>
         </div>
         <small>

@@ -27,6 +27,18 @@ strong {
   border-color: #ec6e4b;
 }
 
+.btn.btn-light {
+  color: #fff;
+  background-color: #fddb92;
+  border-color: #fddb92;
+}
+
+.btn.btn-light:hover {
+  color: #fff;
+  background-color: #ec6e4b;
+  border-color: #ec6e4b;
+}
+
 .col-2 {
   text-align: center;
 }

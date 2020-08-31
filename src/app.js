@@ -58,8 +58,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  sunriseElement.innerHTML = response.data.sys.sunrise;
-  sunsetElement.innerHTML = response.data.sys.sunset;
+  sunriseElement.innerHTML = formatHours(response.data.sys.sunrise * 1000);
+  sunsetElement.innerHTML = formatHours(response.data.sys.sunset * 1000);
 }
 
 function displayForecast(response) {

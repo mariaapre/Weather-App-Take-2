@@ -42,6 +42,8 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let sunriseElement = document.querySelector("#sunup");
+  let sunsetElement = document.querySelector("#sundown");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -56,6 +58,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  sunriseElement.innerHTML = response.data.sys.sunrise;
+  sunsetElement.innerHTML = response.data.sys.sunset;
 }
 
 function displayForecast(response) {
